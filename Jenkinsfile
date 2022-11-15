@@ -10,6 +10,11 @@ pipeline {
                 git branch: 'main', credentialsId: '986aaff5-fe2c-4d18-aa3d-8849a343e52b', url: 'https://github.com/motaz-mezrani/Projet-cd.git'            }
         } 
 
+     stage('build') {
+            steps {
+                sh 'ansible-playbook ansible/build.yml -i ansible/inventory/hosts.yml'
+                         }
+        }
     
 
 	 
