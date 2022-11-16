@@ -4,4 +4,4 @@
   
 - name: Push image to DockerHub 
   become: yes
-  shell: sudo docker push motazmezrani/projet-cd:latest
+  shell: docker push motazmezrani/projet-cd:latest
