@@ -2,7 +2,7 @@
 # tasks file for docker-registry
      - name: Tag image
        become: yes
-       shell: docker tag projet-cd motazmezrani/cd:latest
+       shell: docker tag motazmezrani/projet-cd motazmezrani/cd:latest
 
 
      - name: Push to dockerhub
