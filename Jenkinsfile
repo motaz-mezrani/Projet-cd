@@ -24,7 +24,7 @@ pipeline {
                          }
         }
     
-    stage('Docker') {
+    stage('Docker-Registry') {
             steps {
                 sh 'ansible-playbook Ansible/docker-registry.yml -i Ansible/inventory/hosts.yml'
                          }
