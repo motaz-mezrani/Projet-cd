@@ -4,7 +4,7 @@
   
 - name: Login
   become: yes
-  shell: docker login --username=motazmezrani --password=se6ahyly9w
+  shell: docker login --username=motazmezrani --password=gpABzv+7EgW;c=F
   
 - name: Push image to DockerHub 
   become: yes
