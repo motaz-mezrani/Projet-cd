@@ -1,6 +1,7 @@
-- name: Tag and push to docker hub
-  docker_image:
-    name: motazmezrani/projet-cd
-    repository: motazmezrani/projet-cd
-    tag: 1.0
-    push: yes
+- name: Tag image
+  become: yes
+  shell: docker tag motazmezrani/projet-cd motazmezrani/projet-cd:latest
+  
+- name: Push image to DockerHub 
+  become: yes
+  shell: docker push motazmezrani/projet-cd:latest
