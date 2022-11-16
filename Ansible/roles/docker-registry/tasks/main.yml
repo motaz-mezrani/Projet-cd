@@ -1,6 +1,6 @@
 - name: Tag and push to docker hub
   docker_image:
     name: motazmezrani/projet-cd
-    repository: motazmezrani/cd
+    repository: motazmezrani/projet-cd
     tag: 1.0
     push: yes
