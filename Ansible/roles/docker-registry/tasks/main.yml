@@ -2,10 +2,6 @@
   become: yes
   shell: docker tag motazmezrani/projet-cd motazmezrani/projet-cd:latest
   
-- name: Login
-  become: yes
-  shell: docker login --username=motazmezrani --password=gpABzv+7EgW;c=F
-  
 - name: Push image to DockerHub 
   become: yes
   shell: docker push motazmezrani/projet-cd:latest
