@@ -28,7 +28,7 @@ pipeline {
     
         stage('Docker-Registry') {
             steps {
-                withDockerRegistry([credentialsId: "docker-hub", url: ""]) {
+                withDockerRegistry([credentialsId: "docker-hub", url: "https://index.docker.io/v1/"]) {
                 sh 'echo "docker logged in "'
                 sh 'ansible-playbook Ansible/docker-registry.yml -i Ansible/inventory/hosts.yml'
                                             }
